@@ -49,26 +49,12 @@ cmake_ninja_workdir = /Users/maksymkhodakov/CLionProjects/OSLab5/cmake-build-deb
 
 build cmake_object_order_depends_target_OSLab5: phony || CMakeFiles/OSLab5.dir
 
-build CMakeFiles/OSLab5.dir/src/main.cpp.o: CXX_COMPILER__OSLab5_Debug /Users/maksymkhodakov/CLionProjects/OSLab5/src/main.cpp || cmake_object_order_depends_target_OSLab5
-  DEP_FILE = CMakeFiles/OSLab5.dir/src/main.cpp.o.d
+build CMakeFiles/OSLab5.dir/main.cpp.o: CXX_COMPILER__OSLab5_Debug /Users/maksymkhodakov/CLionProjects/OSLab5/main.cpp || cmake_object_order_depends_target_OSLab5
+  DEP_FILE = CMakeFiles/OSLab5.dir/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -std=gnu++17
   INCLUDES = -I/Users/maksymkhodakov/CLionProjects/OSLab5/include
   OBJECT_DIR = CMakeFiles/OSLab5.dir
-  OBJECT_FILE_DIR = CMakeFiles/OSLab5.dir/src
-
-build CMakeFiles/OSLab5.dir/src/f.cpp.o: CXX_COMPILER__OSLab5_Debug /Users/maksymkhodakov/CLionProjects/OSLab5/src/f.cpp || cmake_object_order_depends_target_OSLab5
-  DEP_FILE = CMakeFiles/OSLab5.dir/src/f.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -std=gnu++17
-  INCLUDES = -I/Users/maksymkhodakov/CLionProjects/OSLab5/include
-  OBJECT_DIR = CMakeFiles/OSLab5.dir
-  OBJECT_FILE_DIR = CMakeFiles/OSLab5.dir/src
-
-build CMakeFiles/OSLab5.dir/src/g.cpp.o: CXX_COMPILER__OSLab5_Debug /Users/maksymkhodakov/CLionProjects/OSLab5/src/g.cpp || cmake_object_order_depends_target_OSLab5
-  DEP_FILE = CMakeFiles/OSLab5.dir/src/g.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -std=gnu++17
-  INCLUDES = -I/Users/maksymkhodakov/CLionProjects/OSLab5/include
-  OBJECT_DIR = CMakeFiles/OSLab5.dir
-  OBJECT_FILE_DIR = CMakeFiles/OSLab5.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/OSLab5.dir
 
 
 # =============================================================================
@@ -78,7 +64,7 @@ build CMakeFiles/OSLab5.dir/src/g.cpp.o: CXX_COMPILER__OSLab5_Debug /Users/maksy
 #############################################
 # Link the executable OSLab5
 
-build OSLab5: CXX_EXECUTABLE_LINKER__OSLab5_Debug CMakeFiles/OSLab5.dir/src/main.cpp.o CMakeFiles/OSLab5.dir/src/f.cpp.o CMakeFiles/OSLab5.dir/src/g.cpp.o
+build OSLab5: CXX_EXECUTABLE_LINKER__OSLab5_Debug CMakeFiles/OSLab5.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   LINK_LIBRARIES = -lpthread
   OBJECT_DIR = CMakeFiles/OSLab5.dir
